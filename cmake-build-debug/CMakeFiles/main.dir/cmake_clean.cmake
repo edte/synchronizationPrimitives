@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/main.c.obj"
+  "CMakeFiles/main.dir/deadlock/main.c.obj"
   "CMakeFiles/main.dir/mutex/mutex.c.obj"
   "libmain.dll.a"
   "main.exe"

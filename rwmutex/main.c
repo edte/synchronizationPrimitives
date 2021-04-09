@@ -24,7 +24,7 @@ void *write_test(void *arg) {
     write_lock(&rw);
     printf("write is doing\n");
     a++;
-//    printf("%d\n", a);
+    printf("after write: a = %d\n", a);
     printf("write is done\n");
     write_unlock(&rw);
     return NULL;
@@ -36,7 +36,7 @@ int main(void) {
     pthread_t t;
     srand(time(NULL));
 
-    for (int i = 0; i < 10000; i++) {
+    for (int i = 0; i < 10; i++) {
         if (rand() % 2 == 0) {
             pthread_create(&t, NULL, write_test, NULL);
         } else {

@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named deadlock
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
-.PHONY : main
+deadlock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 deadlock
+.PHONY : deadlock
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+deadlock/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/build
+.PHONY : deadlock/fast
 
 #=============================================================================
 # Target rules for targets named mutex
@@ -168,32 +168,32 @@ rwmutex/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/build
 .PHONY : rwmutex/fast
 
-main.obj: main.c.obj
+deadlock/main.obj: deadlock/main.c.obj
 
-.PHONY : main.obj
+.PHONY : deadlock/main.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.c.obj
-.PHONY : main.c.obj
+deadlock/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/deadlock/main.c.obj
+.PHONY : deadlock/main.c.obj
 
-main.i: main.c.i
+deadlock/main.i: deadlock/main.c.i
 
-.PHONY : main.i
+.PHONY : deadlock/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.c.i
-.PHONY : main.c.i
+deadlock/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/deadlock/main.c.i
+.PHONY : deadlock/main.c.i
 
-main.s: main.c.s
+deadlock/main.s: deadlock/main.c.s
 
-.PHONY : main.s
+.PHONY : deadlock/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.c.s
-.PHONY : main.c.s
+deadlock/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/deadlock/main.c.s
+.PHONY : deadlock/main.c.s
 
 mutex/main.obj: mutex/main.c.obj
 
@@ -228,7 +228,7 @@ mutex/mutex.obj: mutex/mutex.c.obj
 
 # target to build an object file
 mutex/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/mutex/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/mutex/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mutex.dir\build.make CMakeFiles/mutex.dir/mutex/mutex.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/mutex/mutex.c.obj
 .PHONY : mutex/mutex.c.obj
@@ -239,7 +239,7 @@ mutex/mutex.i: mutex/mutex.c.i
 
 # target to preprocess a source file
 mutex/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/mutex/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/mutex/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mutex.dir\build.make CMakeFiles/mutex.dir/mutex/mutex.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/mutex/mutex.c.i
 .PHONY : mutex/mutex.c.i
@@ -250,7 +250,7 @@ mutex/mutex.s: mutex/mutex.c.s
 
 # target to generate assembly for a file
 mutex/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/mutex/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/mutex/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mutex.dir\build.make CMakeFiles/mutex.dir/mutex/mutex.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/mutex/mutex.c.s
 .PHONY : mutex/mutex.c.s
@@ -317,12 +317,12 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main
+	@echo ... deadlock
 	@echo ... mutex
 	@echo ... rwmutex
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... deadlock/main.obj
+	@echo ... deadlock/main.i
+	@echo ... deadlock/main.s
 	@echo ... mutex/main.obj
 	@echo ... mutex/main.i
 	@echo ... mutex/main.s

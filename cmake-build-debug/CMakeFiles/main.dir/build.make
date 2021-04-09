@@ -76,18 +76,18 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
-CMakeFiles/main.dir/main.c.obj: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/main.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\main.dir\main.c.obj   -c C:\Users\Surface\CLionProjects\untitled9\main.c
+CMakeFiles/main.dir/deadlock/main.c.obj: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/deadlock/main.c.obj: ../deadlock/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/deadlock/main.c.obj"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\main.dir\deadlock\main.c.obj   -c C:\Users\Surface\CLionProjects\untitled9\deadlock\main.c
 
-CMakeFiles/main.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/main.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Surface\CLionProjects\untitled9\main.c > CMakeFiles\main.dir\main.c.i
+CMakeFiles/main.dir/deadlock/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/deadlock/main.c.i"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Surface\CLionProjects\untitled9\deadlock\main.c > CMakeFiles\main.dir\deadlock\main.c.i
 
-CMakeFiles/main.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Surface\CLionProjects\untitled9\main.c -o CMakeFiles\main.dir\main.c.s
+CMakeFiles/main.dir/deadlock/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/deadlock/main.c.s"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Surface\CLionProjects\untitled9\deadlock\main.c -o CMakeFiles\main.dir\deadlock\main.c.s
 
 CMakeFiles/main.dir/mutex/mutex.c.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/mutex/mutex.c.obj: ../mutex/mutex.c
@@ -104,13 +104,13 @@ CMakeFiles/main.dir/mutex/mutex.c.s: cmake_force
 
 # Object files for target main
 main_OBJECTS = \
-"CMakeFiles/main.dir/main.c.obj" \
+"CMakeFiles/main.dir/deadlock/main.c.obj" \
 "CMakeFiles/main.dir/mutex/mutex.c.obj"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
-main.exe: CMakeFiles/main.dir/main.c.obj
+main.exe: CMakeFiles/main.dir/deadlock/main.c.obj
 main.exe: CMakeFiles/main.dir/mutex/mutex.c.obj
 main.exe: CMakeFiles/main.dir/build.make
 main.exe: CMakeFiles/main.dir/linklibs.rsp
