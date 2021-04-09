@@ -130,6 +130,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named barrier
+
+# Build rule for target.
+barrier: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 barrier
+.PHONY : barrier
+
+# fast build rule for target.
+barrier/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/build
+.PHONY : barrier/fast
+
+#=============================================================================
 # Target rules for targets named deadlock
 
 # Build rule for target.
@@ -156,6 +169,19 @@ mutex/fast:
 .PHONY : mutex/fast
 
 #=============================================================================
+# Target rules for targets named cond
+
+# Build rule for target.
+cond: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cond
+.PHONY : cond
+
+# fast build rule for target.
+cond/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/build
+.PHONY : cond/fast
+
+#=============================================================================
 # Target rules for targets named rwmutex
 
 # Build rule for target.
@@ -167,6 +193,127 @@ rwmutex: cmake_check_build_system
 rwmutex/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/build
 .PHONY : rwmutex/fast
+
+#=============================================================================
+# Target rules for targets named spinlock
+
+# Build rule for target.
+spinlock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 spinlock
+.PHONY : spinlock
+
+# fast build rule for target.
+spinlock/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/build
+.PHONY : spinlock/fast
+
+barrier/barrier.obj: barrier/barrier.c.obj
+
+.PHONY : barrier/barrier.obj
+
+# target to build an object file
+barrier/barrier.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/barrier/barrier.c.obj
+.PHONY : barrier/barrier.c.obj
+
+barrier/barrier.i: barrier/barrier.c.i
+
+.PHONY : barrier/barrier.i
+
+# target to preprocess a source file
+barrier/barrier.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/barrier/barrier.c.i
+.PHONY : barrier/barrier.c.i
+
+barrier/barrier.s: barrier/barrier.c.s
+
+.PHONY : barrier/barrier.s
+
+# target to generate assembly for a file
+barrier/barrier.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/barrier/barrier.c.s
+.PHONY : barrier/barrier.c.s
+
+barrier/main.obj: barrier/main.c.obj
+
+.PHONY : barrier/main.obj
+
+# target to build an object file
+barrier/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/barrier/main.c.obj
+.PHONY : barrier/main.c.obj
+
+barrier/main.i: barrier/main.c.i
+
+.PHONY : barrier/main.i
+
+# target to preprocess a source file
+barrier/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/barrier/main.c.i
+.PHONY : barrier/main.c.i
+
+barrier/main.s: barrier/main.c.s
+
+.PHONY : barrier/main.s
+
+# target to generate assembly for a file
+barrier/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/barrier/main.c.s
+.PHONY : barrier/main.c.s
+
+cond/cond.obj: cond/cond.c.obj
+
+.PHONY : cond/cond.obj
+
+# target to build an object file
+cond/cond.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/cond/cond.c.obj
+.PHONY : cond/cond.c.obj
+
+cond/cond.i: cond/cond.c.i
+
+.PHONY : cond/cond.i
+
+# target to preprocess a source file
+cond/cond.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/cond/cond.c.i
+.PHONY : cond/cond.c.i
+
+cond/cond.s: cond/cond.c.s
+
+.PHONY : cond/cond.s
+
+# target to generate assembly for a file
+cond/cond.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/cond/cond.c.s
+.PHONY : cond/cond.c.s
+
+cond/main.obj: cond/main.c.obj
+
+.PHONY : cond/main.obj
+
+# target to build an object file
+cond/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/cond/main.c.obj
+.PHONY : cond/main.c.obj
+
+cond/main.i: cond/main.c.i
+
+.PHONY : cond/main.i
+
+# target to preprocess a source file
+cond/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/cond/main.c.i
+.PHONY : cond/main.c.i
+
+cond/main.s: cond/main.c.s
+
+.PHONY : cond/main.s
+
+# target to generate assembly for a file
+cond/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/cond/main.c.s
+.PHONY : cond/main.c.s
 
 deadlock/main.obj: deadlock/main.c.obj
 
@@ -309,6 +456,60 @@ rwmutex/rwmutex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/rwmutex/rwmutex.c.s
 .PHONY : rwmutex/rwmutex.c.s
 
+spinlock/main.obj: spinlock/main.c.obj
+
+.PHONY : spinlock/main.obj
+
+# target to build an object file
+spinlock/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/spinlock/main.c.obj
+.PHONY : spinlock/main.c.obj
+
+spinlock/main.i: spinlock/main.c.i
+
+.PHONY : spinlock/main.i
+
+# target to preprocess a source file
+spinlock/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/spinlock/main.c.i
+.PHONY : spinlock/main.c.i
+
+spinlock/main.s: spinlock/main.c.s
+
+.PHONY : spinlock/main.s
+
+# target to generate assembly for a file
+spinlock/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/spinlock/main.c.s
+.PHONY : spinlock/main.c.s
+
+spinlock/spinlock.obj: spinlock/spinlock.c.obj
+
+.PHONY : spinlock/spinlock.obj
+
+# target to build an object file
+spinlock/spinlock.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/spinlock/spinlock.c.obj
+.PHONY : spinlock/spinlock.c.obj
+
+spinlock/spinlock.i: spinlock/spinlock.c.i
+
+.PHONY : spinlock/spinlock.i
+
+# target to preprocess a source file
+spinlock/spinlock.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/spinlock/spinlock.c.i
+.PHONY : spinlock/spinlock.c.i
+
+spinlock/spinlock.s: spinlock/spinlock.c.s
+
+.PHONY : spinlock/spinlock.s
+
+# target to generate assembly for a file
+spinlock/spinlock.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/spinlock/spinlock.c.s
+.PHONY : spinlock/spinlock.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -317,9 +518,24 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... barrier
+	@echo ... cond
 	@echo ... deadlock
 	@echo ... mutex
 	@echo ... rwmutex
+	@echo ... spinlock
+	@echo ... barrier/barrier.obj
+	@echo ... barrier/barrier.i
+	@echo ... barrier/barrier.s
+	@echo ... barrier/main.obj
+	@echo ... barrier/main.i
+	@echo ... barrier/main.s
+	@echo ... cond/cond.obj
+	@echo ... cond/cond.i
+	@echo ... cond/cond.s
+	@echo ... cond/main.obj
+	@echo ... cond/main.i
+	@echo ... cond/main.s
 	@echo ... deadlock/main.obj
 	@echo ... deadlock/main.i
 	@echo ... deadlock/main.s
@@ -335,6 +551,12 @@ help:
 	@echo ... rwmutex/rwmutex.obj
 	@echo ... rwmutex/rwmutex.i
 	@echo ... rwmutex/rwmutex.s
+	@echo ... spinlock/main.obj
+	@echo ... spinlock/main.i
+	@echo ... spinlock/main.s
+	@echo ... spinlock/spinlock.obj
+	@echo ... spinlock/spinlock.i
+	@echo ... spinlock/spinlock.s
 .PHONY : help
 
 

@@ -72,9 +72,12 @@ CMAKE_BINARY_DIR = C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/barrier.dir/all
 all: CMakeFiles/deadlock.dir/all
 all: CMakeFiles/mutex.dir/all
+all: CMakeFiles/cond.dir/all
 all: CMakeFiles/rwmutex.dir/all
+all: CMakeFiles/spinlock.dir/all
 
 .PHONY : all
 
@@ -84,11 +87,41 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/barrier.dir/clean
 clean: CMakeFiles/deadlock.dir/clean
 clean: CMakeFiles/mutex.dir/clean
+clean: CMakeFiles/cond.dir/clean
 clean: CMakeFiles/rwmutex.dir/clean
+clean: CMakeFiles/spinlock.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/barrier.dir
+
+# All Build rule for target.
+CMakeFiles/barrier.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target barrier"
+.PHONY : CMakeFiles/barrier.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/barrier.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/barrier.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/barrier.dir/rule
+
+# Convenience name for target.
+barrier: CMakeFiles/barrier.dir/rule
+
+.PHONY : barrier
+
+# clean rule for target.
+CMakeFiles/barrier.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\barrier.dir\build.make CMakeFiles/barrier.dir/clean
+.PHONY : CMakeFiles/barrier.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/deadlock.dir
@@ -97,7 +130,7 @@ clean: CMakeFiles/rwmutex.dir/clean
 CMakeFiles/deadlock.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\deadlock.dir\build.make CMakeFiles/deadlock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target deadlock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=7,8,9 "Built target deadlock"
 .PHONY : CMakeFiles/deadlock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -124,7 +157,7 @@ CMakeFiles/deadlock.dir/clean:
 CMakeFiles/mutex.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mutex.dir\build.make CMakeFiles/mutex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mutex.dir\build.make CMakeFiles/mutex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=4,5,6 "Built target mutex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=10,11,12 "Built target mutex"
 .PHONY : CMakeFiles/mutex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -145,13 +178,40 @@ CMakeFiles/mutex.dir/clean:
 .PHONY : CMakeFiles/mutex.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/cond.dir
+
+# All Build rule for target.
+CMakeFiles/cond.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=4,5,6 "Built target cond"
+.PHONY : CMakeFiles/cond.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cond.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/cond.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/cond.dir/rule
+
+# Convenience name for target.
+cond: CMakeFiles/cond.dir/rule
+
+.PHONY : cond
+
+# clean rule for target.
+CMakeFiles/cond.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\cond.dir\build.make CMakeFiles/cond.dir/clean
+.PHONY : CMakeFiles/cond.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/rwmutex.dir
 
 # All Build rule for target.
 CMakeFiles/rwmutex.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=7,8,9,10 "Built target rwmutex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=13,14,15,16 "Built target rwmutex"
 .PHONY : CMakeFiles/rwmutex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -170,6 +230,33 @@ rwmutex: CMakeFiles/rwmutex.dir/rule
 CMakeFiles/rwmutex.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rwmutex.dir\build.make CMakeFiles/rwmutex.dir/clean
 .PHONY : CMakeFiles/rwmutex.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/spinlock.dir
+
+# All Build rule for target.
+CMakeFiles/spinlock.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles --progress-num=17,18,19 "Built target spinlock"
+.PHONY : CMakeFiles/spinlock.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/spinlock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/spinlock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Surface\CLionProjects\untitled9\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/spinlock.dir/rule
+
+# Convenience name for target.
+spinlock: CMakeFiles/spinlock.dir/rule
+
+.PHONY : spinlock
+
+# clean rule for target.
+CMakeFiles/spinlock.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\spinlock.dir\build.make CMakeFiles/spinlock.dir/clean
+.PHONY : CMakeFiles/spinlock.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

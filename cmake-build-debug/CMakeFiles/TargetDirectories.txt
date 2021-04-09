@@ -1,5 +1,8 @@
 C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/barrier.dir
 C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/deadlock.dir
 C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/mutex.dir
 C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/cond.dir
 C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/rwmutex.dir
+C:/Users/Surface/CLionProjects/untitled9/cmake-build-debug/CMakeFiles/spinlock.dir
