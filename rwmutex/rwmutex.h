@@ -13,5 +13,14 @@ typedef struct {
     int read_count;
 } rwmutex;
 
+rwmutex rwmutex_new();
+
+void read_lock(rwmutex *rw);
+
+void read_unlock(rwmutex *rw);
+
+void write_lock(rwmutex *rw);
+
+void write_unlock(rwmutex *rw);
 
 #endif //UNTITLED9_RWMUTEX_H

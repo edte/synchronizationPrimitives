@@ -10,7 +10,7 @@
 
 // 共享全局变量
 int a = 0;
-
+// 对 a 的互斥锁
 mutex m;
 
 void *Do(void *arg) {

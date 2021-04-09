@@ -13,6 +13,16 @@ semaphore.h
 C:/Users/Surface/CLionProjects/untitled9/rwmutex/main.c
 stdio.h
 -
+rwmutex.h
+C:/Users/Surface/CLionProjects/untitled9/rwmutex/rwmutex.h
+pthread.h
+-
+time.h
+-
+stdlib.h
+-
+
+C:/Users/Surface/CLionProjects/untitled9/rwmutex/rwmutex.h
 ../mutex/mutex.h
 C:/Users/Surface/CLionProjects/untitled9/mutex/mutex.h
 

@@ -6,7 +6,9 @@ CMakeFiles/rwmutex.dir/mutex/mutex.c.obj: ../mutex/mutex.h
 
 CMakeFiles/rwmutex.dir/rwmutex/main.c.obj: ../mutex/mutex.h
 CMakeFiles/rwmutex.dir/rwmutex/main.c.obj: ../rwmutex/main.c
+CMakeFiles/rwmutex.dir/rwmutex/main.c.obj: ../rwmutex/rwmutex.h
 
+CMakeFiles/rwmutex.dir/rwmutex/rwmutex.c.obj: ../mutex/mutex.h
 CMakeFiles/rwmutex.dir/rwmutex/rwmutex.c.obj: ../rwmutex/rwmutex.c
 CMakeFiles/rwmutex.dir/rwmutex/rwmutex.c.obj: ../rwmutex/rwmutex.h
 
