@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Surface/CLionProjects/untitled9/main.c
+stdio.h
+-
+pthread.h
+-
+unistd.h
+-
+
+C:/Users/Surface/CLionProjects/untitled9/mutex/mutex.c
+mutex.h
+C:/Users/Surface/CLionProjects/untitled9/mutex/mutex.h
+malloc.h
+C:/Users/Surface/CLionProjects/untitled9/mutex/malloc.h
+
+C:/Users/Surface/CLionProjects/untitled9/mutex/mutex.h
+semaphore.h
+-
+

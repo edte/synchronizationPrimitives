@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\rwmutex.dir/objects.a
+C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\rwmutex.dir/objects.a @CMakeFiles\rwmutex.dir\objects1.rsp
+C:\TDM-GCC-64\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\rwmutex.dir/objects.a -Wl,--no-whole-archive  -o rwmutex.exe -Wl,--out-implib,librwmutex.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\rwmutex.dir\linklibs.rsp
